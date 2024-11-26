@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relieur"
+version = "0.0.1"
+
+description = "A small tool to merge multiples MusicXML files in a unique one"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["MusicXML", "Score"]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "musicxml",
+]
+
+[project.scripts]
+relieur = "relieur.relieur:main"
